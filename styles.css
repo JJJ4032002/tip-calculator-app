@@ -1,0 +1,192 @@
+html {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  font-family: monospace;
+}
+
+body {
+  background: #c3e2e5;
+}
+h1 {
+  color: #26c2ad;
+}
+h4 {
+  color: white;
+}
+
+.logo {
+  text-align: center;
+  margin: 4em 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.CalcContainer {
+  margin: 2em auto 2em auto;
+  width: 100%;
+  background-color: #ffffff;
+  border-radius: 0.6em;
+}
+
+.ContentCont {
+  width: 85%;
+  margin: 1em auto 1em auto;
+}
+
+.gray-text {
+  color: #687474;
+  margin: 0.3em 0;
+}
+
+input {
+  width: 100%;
+  padding: 0.5em 0.6em;
+  outline: none;
+  font-size: 1.3rem;
+  font-weight: 700;
+  border: 1px solid transparent;
+
+  text-align: right;
+  border-radius: 0.3em;
+  color: #00474b;
+  z-index: 0;
+}
+
+.billInput {
+  background: url("./images/icon-dollar.svg");
+  background-repeat: no-repeat;
+  background-position-y: center;
+  background-position-x: 4%;
+  background-color: #f3f8fb;
+}
+
+.peopleInput {
+  background: url("./images/icon-person.svg");
+  background-repeat: no-repeat;
+  background-position-y: center;
+  background-position-x: 4%;
+  background-color: #f3f8fb;
+}
+
+input:focus {
+  border: 1px solid #26c2ad;
+}
+
+.tipButtons {
+  margin: 1.5em 0;
+}
+
+.tipButtonsGrid {
+  margin: 0.8em 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+
+.grid-items {
+  font-size: 1.6rem;
+  padding: 0.4em 0;
+  background-color: #00474b;
+  color: white;
+  border: 3px solid transparent;
+  border-radius: 0.3em;
+  text-align: center;
+}
+
+.grid-items:hover {
+  background-color: #26c2ad;
+  color: #00474b;
+  cursor: pointer;
+}
+
+#btnInput {
+  padding: 0 0.4em;
+  background-color: #f3f8fb;
+}
+
+.NoOFPeopleDiv {
+  margin: 1em 0;
+}
+
+.flexContainer {
+  padding: 0.5em;
+  display: flex;
+  flex-direction: column;
+}
+
+.CalcResCont {
+  margin: 1em auto;
+  width: 85%;
+  padding: 1em;
+  background-color: #00474b;
+  border-radius: 0.4em;
+}
+
+.Result {
+  display: flex;
+  justify-content: space-between;
+  margin: 1em 0;
+  align-items: center;
+}
+
+.resBtn {
+  width: 100%;
+  padding: 0.5em 0;
+  text-align: center;
+  background-color: #26c2ad;
+  color: #00474b;
+  border: 2px solid transparent;
+  cursor: pointer;
+  border-radius: 0.3em;
+}
+
+.resBtn:hover {
+  background-color: #9fe8df;
+}
+
+@media (min-width: 800px) {
+  .flexContainer {
+    flex-direction: row;
+    padding: 2em;
+  }
+  .CalcContainer {
+    width: 60%;
+  }
+  .tipButtonsGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .ContentCont {
+    margin: 0em 1em 0em 0em;
+  }
+  .CalcResCont {
+    margin: 0em 0em 0em 1em;
+    position: relative;
+    overflow: hidden;
+  }
+  .resBtn {
+    position: absolute;
+    bottom: 0;
+    left: 2%;
+    right: 2%;
+    width: 90%;
+    margin: 1em auto;
+  }
+}
+
+@media (min-width: 600px) {
+  .CalcContainer {
+    width: 70%;
+  }
+}
