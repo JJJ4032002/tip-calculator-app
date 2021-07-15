@@ -21,6 +21,7 @@
     BillText.textContent = "$0.00";
     billInput.value = "";
     peopleInput.value = "";
+    customInput.value = "";
   }
 
   function checkForCustom(e) {
